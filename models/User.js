@@ -6,9 +6,9 @@ const userSchema = new Schema(
         username:String,
         password:String,
         email:String,
-        games:???,
-        picture:???,
-        
+        // games:???,
+        // picture:???,
+
 
 
 

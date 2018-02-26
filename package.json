@@ -7,7 +7,22 @@
     "watch": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.16.0",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.9",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-ejs-layouts": "^2.2.0",
+    "mongoose": "^4.8.7",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.2"
+  }
+=======
+>>>>>>> master
+    "body-parser": "~1.16.1",
     "bootstrap": "^4.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
@@ -31,4 +46,8 @@
   },
   "homepage": "https://github.com/encurso/ecurso#readme",
   "description": ""
+<<<<<<< HEAD
+=======
+>>>>>>> e053ea5be59a435d4da5c1b220ee0e85e393178c
+>>>>>>> master
 }

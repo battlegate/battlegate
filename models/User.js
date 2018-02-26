@@ -7,11 +7,7 @@ const userSchema = new Schema(
         password:String,
         email:String,
         // games:???,
-        // picture:???,
-
-
-
-
+        //picture:???,
     },
     {
         timestamps:{

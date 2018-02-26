@@ -1,34 +1,50 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>BattleGate</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
-  <body>
 
-   <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                        <img src="https://www.somosmamas.com.ar/wp-content/uploads/2017/11/emoji-pensativo.png" width="30" height="30" alt="">
-                      </a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+        body {
+            font: 14px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        .navbar-nav  li a:hover {
+            color: #a08614 !important;
+        }
+        </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+            <a class="navbar-brand" href=/home/frieda/Documentos/ironhack/battlegate/views/index.ejs"">
+                    <img src="/home/frieda/Documentos/ironhack/battlegate/28554723_10208801065104085_1601343520_o.png" width="80" height="80" alt="">
+                  </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/home/frieda/Documentos/ironhack/battlegate/views/index.ejs">Home</a></li>
+        <li><a href="/home/frieda/Documentos/ironhack/battlegate/views/aboutus.ejs">About us</a></li>
+        <li><a href="/home/frieda/Documentos/ironhack/battlegate/views/contact.ejs">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/home/frieda/Documentos/ironhack/battlegate/views/signup.ejs"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/home/frieda/Documentos/ironhack/battlegate/views/login.ejs"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+      <!-- <div class="jumbotron text-center">
+            <img src="/home/frieda/Documentos/ironhack/battlegate/28554723_10208801065104085_1601343520_o.png" width="500" height="500" alt="">
+          </div> -->
 
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -69,27 +85,24 @@
           </div>
 
       
-  <!-- <div class="jumbotron text-center">
-    <h1>Battle-Gate</h1>
-    <p>--------------------------------------------------</p> 
-  </div> -->
+  
     
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h3><a href="#">How to</a></h3>
+        <h3><a href="/home/frieda/Documentos/ironhack/battlegate/views/how.ejs">How to</a></h3>
         <p>asdfghjklñ</p>
         <p>asdfghjklñ</p>
       </div>
       <div class="col-sm-4">
             <section style="text-align:center">
-        <h3><a href="#">Find</a></h3>
+        <h3><a href="/home/frieda/Documentos/ironhack/battlegate/views/find.ejs">Find</a></h3>
         <p>asdfghjklñ</p>
         <p>asdfghjklñ</p>
       </div>
       <div class="col-sm-4">
             <section style="text-align:right">
-        <h3><a href="#">Create</a></h3>        
+        <h3><a href="/home/frieda/Documentos/ironhack/battlegate/views/create.ejs">Create</a></h3>        
         <p>asdfghjklñ</p>
         <p>asdfghjklñ</p>
       </div>

@@ -27,9 +27,32 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(layouts);
-
+//Aqui usa el nombre de el js file
 const index = require('./routes/index');
+const aboutus = require('./routes/aboutus');
+const contactus = require('./routes/contact');
+const create = require('./routes/createbattle');
+const error = require('./routes/contact');
+const how = require('./routes/how');
+const login = require('./routes/auth');
+const signup = require('./routes/auth');
+const find = require('./routes/findbattle');
+
+
+
+
+
+//Aqui usas el nombre de las consts de arriba
 app.use('/', index);
+app.use('/', aboutus)
+app.use('/', contactus)
+app.use('/', create)
+app.use('/', how)
+app.use('/', login)
+app.use('/', signup)
+app.use('/', find)
+
+
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

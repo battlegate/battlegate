@@ -29,5 +29,6 @@
     "url": "https://github.com/encurso/ecurso/issues"
   },
   "homepage": "https://github.com/encurso/ecurso#readme",
+  "devDependencies": {},
   "description": ""
 }

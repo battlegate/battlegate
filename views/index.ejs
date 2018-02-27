@@ -1,2 +1,128 @@
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+        body {
+            font: 14px Montserrat, sans-serif;
+            line-height: 1.8;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .bg-3 { 
+            background-color: #000000; /*  White */
+            color: #000000;
+        }
+        .bg-1 { 
+            background-color: #000000; /* Green */
+            color: #ffffff;
+        }
+
+        .navbar-nav  li a:hover {
+            color: #a08614 !important;
+        }
+        </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+            <a class="navbar-brand" href="/index">
+                    <img src="" width="80" height="80" alt="">
+                  </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/aboutus">About us</a></li>
+        <li><a href="/contactus">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+      <!-- <div class="jumbotron text-center">
+            <img src="/home/frieda/Documentos/ironhack/battlegate/28554723_10208801065104085_1601343520_o.png" width="500" height="500" alt="">
+          </div> -->
+
+
+      <div id="myCarousel" class="carousel slide bg-1" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <section style="text-align:center">
+                <img src="http://www.educacionyculturaaz.com/wp-content/uploads/2014/08/Gamers.jpg" width="800" height="500" alt="game1">
+              </div>
+          
+              <div class="item">
+                    <section style="text-align:center">
+                <img src="https://www.tec.com.pe/wp-content/uploads/2017/07/viewsonic-240hz-620x347.png" width="800" height="500" alt="game2">
+              </div>
+          
+              <div class="item">
+                    <section style="text-align:center">
+                <img src="http://img.jakpost.net/c/2016/11/08/2016_11_08_15516_1478588658._large.jpg" width="800" height="500" alt="game3">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+      
+  
+    
+  <div class="container bg-3">
+    <div class="row">
+      <div class="col-sm-4">
+          <section style="text-align:center">
+        <h3><a href="/how">How it works</a></h3>
+        <img src="http://blog.riptapparel.com/blog/wp-content/uploads/2016/08/Gamer-Lifestyles-Blog-Image.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <p>asdfghjklñ</p>
+        <p>asdfghjklñ</p>
+      </div>
+      <div class="col-sm-4">
+            <section style="text-align:center">
+        <h3><a href="/findbattle">Find Friends</a></h3>
+        <img src="https://edge.alluremedia.com.au/m/k/2016/11/iStock_80580655_1080.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <p>asdfghjklñ</p>
+        <p>asdfghjklñ</p>
+      </div>
+      <div class="col-sm-4">
+            <section style="text-align:center">
+        <h3><a href="/createbattle">Create your Event</a></h3>
+        <img src="http://media.moddb.com/images/groups/1/8/7972/lets-play.jpg" class="img-responsive margin" style="width:100%" alt="Image">        
+        <p>asdfghjklñ</p>
+        <p>asdfghjklñ</p>
+      </div>
+    </div>
+  </div>
+  
+  </body>
+  </html>
+  

@@ -11,15 +11,21 @@ const app          = express();
 const session = require("express-session");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
+const User = require('./models/User')
+const flash = require("connect-flash");
 
 mongoose.connect('mongodb://alec:123@ds011228.mlab.com:11228/battlegate')
 
+app.use(flash());
 
 app.use(session({
   secret: "alec",
   resave: true,
   saveUninitialized: true
 }));
+
+
+
 passport.serializeUser((user, cb) => {
   cb(null, user._id);
 });
@@ -32,6 +38,7 @@ passport.deserializeUser((id, cb) => {
 });
 
 passport.use(new LocalStrategy((username, password, next) => {
+  passReqToCallback : true
   User.findOne({ username }, (err, user) => {
     if (err) {
       return next(err);
@@ -50,6 +57,12 @@ passport.use(new LocalStrategy((username, password, next) => {
 app.use(passport.initialize());
 
 app.use(passport.session());
+
+//bliss middleware to set the user in the templates
+app.use(function(req,res,next){
+  res.locals.user = req.user;
+  next();
+}); 
 
 
 // view engine setup

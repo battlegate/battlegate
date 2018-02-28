@@ -41,14 +41,15 @@
 
   <form action="/signup" method="POST" id="form-container">
     <label for="username">Username</label>
-    <input type="text" name="username"
-      placeholder="JonSnow">
+    <input type="text" name="username">
     <br><br>
     <label for="password">Password</label>
-    <input type="password" name="password"
-      placeholder="Your password">
+    <input type="password" name="password">
     <br><br>
     <button>Create account</button>
+    <%if (typeof message !== 'undefined'){%>
+      <%=message%>
+      <%}%>
   </form>
 </body>
 </html>

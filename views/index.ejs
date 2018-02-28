@@ -28,8 +28,14 @@
         <li><a href="/contactus">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        
+       <% if(typeof user !== "undefined"){ %>
+          <li><a href="/logout"><span class="glyphicon glyphicon-user"></span> logout</a></li>
+        <% }else{ %>
         <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+       <% } %>
+
       </ul>
     </div>
   </nav>
@@ -37,7 +43,6 @@
       <!-- <div class="jumbotron text-center">
             <img src="/home/frieda/Documentos/ironhack/battlegate/28554723_10208801065104085_1601343520_o.png" width="500" height="500" alt="">
           </div> -->
-
 
       <div id="myCarousel" class="carousel slide bg-1" data-ride="carousel">
             <!-- Indicators -->

@@ -1,14 +1,47 @@
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Montserrat, sans-serif;
+  line-height: 1.8;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-a {
-  color: #00B7FF;
+.navbar {
+border: 0;
+border-radius: 0;
+margin-bottom: 0;
+font-size: 14px;
+letter-spacing: 2px;
 }
 
-.jumbotron text-center{
-    position: absolute;
-    top:  50px; 
-    left: 50px;
+.navbar-nav  li a:hover {
+  color:  #ce5fa0  !important;
 }
+
+.container-footer{
+background-color: #525252;
+color: #ffffff;
+border: 0;
+border-radius: 0;
+margin-bottom: 0;
+letter-spacing: 2px;
+}
+
+p {font-size: 16px;}
+        .margin {margin-bottom: 20px;}
+        .bg-1 { 
+            background-color: #525252; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 { 
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3 { 
+            background-color: #000000; /* White */
+            color: #ffffff;
+        }
+        .bg-4 { 
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }

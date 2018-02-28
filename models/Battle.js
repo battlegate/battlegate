@@ -3,13 +3,13 @@ const Schema = mongoose.Schema;
 
 const battleSchema = new Schema(
     {
-        game:???,
+        games:[],
         date:String,
-        category      : { type: String, enum: ['','',''], required: true },
+        category: { type: String, enum: ['','',''], required: true },
         place:String,
         price:String,
         description:String,
-        members:???,
+        members: []
     },
     {
         timestamps:{

@@ -37,6 +37,7 @@ const how = require('./routes/how');
 const login = require('./routes/auth');
 const signup = require('./routes/auth');
 const find = require('./routes/findbattle');
+const profile = require('./routes/profile');
 
 
 

@@ -15,7 +15,7 @@ letter-spacing: 2px;
 }
 
 .navbar-nav  li a:hover {
-  color:  #ce5fa0  !important;
+  color:  #fd0000  !important;
 }
 
 .container-footer{
@@ -45,3 +45,27 @@ p {font-size: 16px;}
             background-color: #2f2f2f; /* Black Gray */
             color: #fff;
         }
+        .bg-5 { background-color: #2f2f2f; /* Black Gray */
+            color: #fff; }
+        .bg-6 { }
+
+        .bg-7 {  background-color: #525252; /* Green */
+            color: #000000;
+            width: 50%;
+            height: 40%;
+            letter-spacing: 2px;
+        }
+        .bg-8 { }
+        .bg-9 { }
+        .bg-10 { }
+        .bg-11 { }
+        .bg-12 {background-color: #525252; /* Green */
+            color: #000000;
+            letter-spacing: 2px; }
+
+            .bg-13 {background-color: #525252; /* Green */
+                color: #000000;
+                width: 50%;
+                height: 40%;
+             }
+       

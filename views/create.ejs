@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Create Event</title>
@@ -10,11 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
-  <style>
-        .navbar-nav  li a:hover {
-            color: #a0147d !important;
-        }
-        </style>
 </head>
 <body>
 
@@ -40,36 +35,72 @@
     </div>
   </nav>
 
-  <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-    <h3 class="margin">Create your Event</h3>
-    <img src="" class="img-responsive img-circle margin" style="display:inline" alt="imgbg" width="500" height="600">
-    <h3>Battle Gate</h3>
-  </div>
+  <form>
+      <div class="container-fluid bg-12">
+      <fieldset>
+        <legend>Create</legend>
+        </div>
+        <div class="container-fluid bg-13">
+        <div class="form-group col-md-6 text-left">
+            <label for="inputEmail4">Evento</label>
+            <input type="email" placeholder="nombre del evento">
+          </div>
+
+                  <div class="form-group">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" placeholder="Email">
+                      <id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+              
+        <div class="form-group">
+          <label for="exampleTextarea">Descripción del evento</label>
+          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleSelect1">Nivel de dificultad</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Av.San Luis">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleTextarea">Descripción del lugar</label>
+                <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+              </div>
+
+        <div class="form-group">
+          <label for="exampleInputFile">Seleccionar foto para el evento</label>
+          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          <small id="fileHelp" class="form-text text-muted"></small>
+        </div>
+       
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
   
-  <!-- Third Container (Grid) -->
-  <div class="container-fluid bg-3 text-center">    
-    <h3 class="margin">Where To Find Me?</h3><br>
-    <div class="row">
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div>
-    </div>
   </div>
-  
+
   <!-- Footer -->
   <footer class="container-fluid bg-4 text-center">
     <p> <a href=""></a></p> 
   </footer>
 
 </body>
-</html>>
+</html>

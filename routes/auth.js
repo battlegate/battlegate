@@ -4,6 +4,7 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const passport = require('passport')
 const salt = bcrypt.genSaltSync(10);
+const ensureLogin = require ('connect-ensure-login')
 
 router.get("/login", (req, res, next) => {
   res.render("login");
@@ -23,13 +24,14 @@ router.post("/login", passport.authenticate("local", {
     const username = req.body.username,
           password = req.body.password;
     if(username === "" || password === ""){
-        res.render("auth/signup", {message: "Indicate username and password"});
+        console.log('ingresa algo')
+        res.render("signup", {message: "Indicate username and password"});
         return;
     }
   
       User.findOne({username}, "username", (err, user)=>{
          if (user !== null){
-             res.render("auth/signup", {message:"The username already exists"});
+             res.render("signup", {message:"The username already exists"});
              return;
          }
   
@@ -46,6 +48,18 @@ router.post("/login", passport.authenticate("local", {
          });
   
       });
+  });
+
+  router.get("/logout", (req, res, next) => {
+    if (!req.session.currentUser) { res.redirect("/"); return; }
+  
+    req.session.destroy((err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.redirect("/login");
+      }
+    });
   });
   
   module.exports = router;

@@ -5,7 +5,7 @@ const battleSchema = new Schema(
     {
         games:[],
         date:String,
-        category      : { type: String, enum: ['','',''], required: true },
+        category: { type: String, enum: ['','',''], required: true },
         place:String,
         price:String,
         description:String,

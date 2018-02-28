@@ -79,9 +79,6 @@ const signup = require('./routes/auth');
 const find = require('./routes/findbattle');
 
 
-
-
-
 //Aqui usas el nombre de las consts de arriba
 app.use('/', index);
 app.use('/', aboutus)

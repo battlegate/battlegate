@@ -11,7 +11,7 @@ router.get("/login", (req, res, next) => {
 });
 
 router.post("/login", passport.authenticate("local", {
-  successRedirect: "/",
+  successRedirect: "/profile",
   failureRedirect: "/login",
   failureFlash: true,
   passReqToCallback: true
@@ -64,7 +64,16 @@ router.post("/login", passport.authenticate("local", {
      
   
       });
- 
+
+      router.get("/auth/google", passport.authenticate("google", {
+        scope: ["https://www.googleapis.com/auth/plus.login",
+                "https://www.googleapis.com/auth/plus.profile.emails.read"]
+      }));
+      
+      router.get("/auth/google/callback", passport.authenticate("google", {
+        failureRedirect: "/",
+        successRedirect: "/profile"
+      }));
 
   router.get("/logout", (req, res, next) => {
     req.logout()

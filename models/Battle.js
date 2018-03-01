@@ -3,9 +3,11 @@ const Schema = mongoose.Schema;
 
 const battleSchema = new Schema(
     {
+        name:String,
         games:[],
         date:String,
-        category: { type: String, enum: ['','',''], required: true },
+        category: String, 
+        //{ type: String, enum: ['','',''], required: true },
         place:String,
         price:String,
         description:String,
@@ -19,4 +21,4 @@ const battleSchema = new Schema(
     }
     );
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Battle", battleSchema);

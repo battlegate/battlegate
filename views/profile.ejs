@@ -8,102 +8,73 @@
       </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="/profile">Profile</a></li>  
+        <li><a href="/findbattle">Find Tournaments</a></li>
+        <li><a href="/createbattle">Create Batlle</a></li>
+      </ul>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
        <% if(typeof user !== "undefined"){ %>
           <li><a href="/logout"><span class="glyphicon glyphicon-user"></span> logout</a></li>
         <% }else{ %>
-        <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
        <% } %>
 
       </ul>
     </div>
   </nav>
+<br> <br> 
+  <div class="container-fluid bg-12">
+      <fieldset>
+        <legend>Profile</legend>
+      </fieldset>
+        </div>
 
   <div class="container">
-    <div class="jumbotron text-center bg-8">
-          <div class="col-md-7 user-details">
-                  <div class="col-md-6 no-pad">
-                      <div class="user-pad">
-                          <h3>Welcome back, Miranda33</h3>
-                          <button type="button" class="btn btn-labeled btn-info" href="/profile">
-                              <span class="btn-label"><i class="fa fa-pencil"></i></span>Update</button>
-                      </div>
-                  </div>
-              </div>
-                  <div class="col-md-6 no-pad">
-                      <div class="user-image">
-                          <img src="https://i.pinimg.com/736x/60/b0/11/60b011f4bdb7f0276405053cf2ea9db0.jpg" class="img-responsive img-circle margin" style="display:inline" alt="imgbg" width="200" height= "200">
-                      </div>
-                  </div>
-              </div>
-              <div class="row overview">
-                  <div class="col-md-4 user-pad text-center">
-                      <h3>FOLLOWERS</h3>
-                      <h4>2,784</h4>
-                  </div>
-                  <div class="col-md-4 user-pad text-center">
-                      <h3>FOLLOWING</h3>
-                      <h4>456</h4>
-                  </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="row text-center text-lg-left">
-              <div class="col-sm-4">
-                  <h4>
-                      Recent Interactions
-                  </h4>
-                  <ul class= "row text-center text-lg-left">
-                      <li>
-                          <h4><i class="fa fa-user coral"></i> Alec_1234 followed you.</h4>
-                      </li>
-                      <li>
-                          <h4><i class="fa fa-heart-o coral"></i> Frii_95 followed you.</h4>
-                      </li>
-                      <li>
-                          <h4><i class="fa fa-paper-plane-o coral"></i> lala33 followed you.</h4>
-                      </li>
-                      <li>
-                          <button type="button" class="btn btn-labeled btn-success" href="#">
-                              <span class="btn-label"><i class="fa fa-bell-o"></i></span>View all activity</button>
-                      </li>
-                  </ul>
-              </div>
-                      <li>
-                          <button type="button" class="btn btn-labeled btn-danger" href="#">
-                              <span class="btn-label"><i class="fa fa-envelope-o"></i></span>View All Messages</button>
-                      </li>
-                  </ul>
-              </div>
-              <div class="user-menu-content">
-                  <h3>
-                      Trending
-                  </h3>
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="view">
-                              <div class="caption">
-                                  <a href="" rel="tooltip" title="Appreciate"><span class="fa fa-heart-o fa-2x"></span></a>
-                                  <a href="" rel="tooltip" title="View"><span class="fa fa-search fa-2x"></span></a>
-                              </div>
-                              <img src="https://static.tumblr.com/1239935a4894d2a0d70ba01c13dd4071/zoftcv5/sCUnlhgru/tumblr_static_tumblr_static_55qm868axqo8gsswws0sg404k_640.jpg" class="img-responsive">
-                          </div>
-                      <div class="col-md-6">
-                          <div class="view">
-                              <div class="caption">
-                                  <h3>Intereses</h3>
-                                  <a href="" rel="tooltip" title="Intereses"><span class="fa fa-heart-o fa-2x"></span></a>
-                              </div>
-                              <img src="http://1.bp.blogspot.com/-wOz4u5UXnB0/VF784ixe67I/AAAAAAAAARw/SB6x324eTtg/s1600/pizap.com14155110303841.jpg" class="img-responsive">
-                      </div>
-                  </div>
-              </div>
-
-            </div>
-         
-      
+      <div class="row">
+        <div class="col-lg-3 col-sm-3">
+    
+  <div class="card hovercard">
+    <div class="cardheader">
+    
+      <div class="avatar">
+      <img alt="" src="https://i.pinimg.com/736x/07/a3/0d/07a30de19f9de424e97dc0fd3dd70716--jocker-image-photography.jpg">
+         </div>
+           <div class="info">
+      <div class="desc">Passionate designer</div>
+      <div class="descrpción">Curious developer</div>
+      <div class="desc">Tech geek</div>
+      </div>
+      <div class="bottom">
+      <a class="btn btn-primary btn-twitter btn-sm" href="/findbattle">
+      <i class="fa fa-twitter"></i>
+      </a>
+                        
+                     
+     <a class="btn btn-warning btn-sm" rel="publisher" href="/createbattle">
+    <i class="fa fa-behance"></i>
+      </a>
+      <div class="form-group">
+      <label for="exampleTextarea">Descripción/gustos/intereses</label>
+      <textarea class="form-control" id="problema" rows="2"></textarea>
+      </div>
+      <div class="form-group">
+      <label for="exampleSelect1">Rango de dificultad</label>
+      <select class="form-control" id="exampleSelect1">
+     <option>1</option>
+     <option>2</option>
+     <option>3</option>
+     <option>4</option>
+     <option>5</option>
+    </select>
+      </div>
+       <div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+       </div>
+     </div>
+  </div>
+    
+   </div>  
+  </div>
+ </div>
  

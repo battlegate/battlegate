@@ -1,3 +1,5 @@
+/* ************Global************** */
+
 
 body {
   font: 14px Montserrat, sans-serif;
@@ -5,7 +7,6 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
-
 
 .navbar {
 border: 0;
@@ -20,7 +21,7 @@ font-family: fantasy;
   color:  #fd0000  !important;
 }
 
-.container-footer{
+.container_footer{
 background-color: #525252;
 color: #ffffff;
 border: 0;
@@ -29,6 +30,7 @@ margin-bottom: 0;
 letter-spacing: 2px;
 font-family: fantasy;
 }
+
 
 p {font-size: 16px;}
         .margin {margin-bottom: 20px;}

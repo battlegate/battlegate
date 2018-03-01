@@ -8,6 +8,8 @@ router.get('/createbattle', (req, res, next) => {
 
 router.post('/createbattle', (req, res, next)=>{
     const name = req.body.name,
+          date = req.body.date,
+          email= req.body.email;
 
 
 }),

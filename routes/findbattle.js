@@ -1,8 +1,9 @@
 const express = require('express');
 const router  = express.Router();
+const Battle  = require('../models/Battle');
 
-router.get('/findbattle', (req, res, next) => {
-    res.render('find');
-});
+
+
+
 
 module.exports = router;

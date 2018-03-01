@@ -52,7 +52,7 @@ router.post("/login", passport.authenticate("local", {
      
             newUser.save(err=>{
                 if (err) return res.render("auth/signup", { message: "Something went wrong" });
-                 res.redirect("/");
+                 res.redirect("/login");
             });
            }
          });

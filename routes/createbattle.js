@@ -9,8 +9,27 @@ router.get('/createbattle', (req, res, next) => {
 router.post('/createbattle', (req, res, next)=>{
     const name = req.body.name,
           date = req.body.date,
-          email= req.body.email;
+          category =req.body.category,
+          place= req.body.place,
+          type=req.body.type;
+    
+    if(name === "" || date === "" || category === "" || place === ""||type === ''){
+        res.render("create", {message: "Please fill out all fields"});
+        return;
+    }
 
+    const newBattle = new Battle({
+        name,
+        date,
+        category,
+        place,
+        type,
+     });
+
+     newBattle.save(err=>{
+        if (err) return res.render("/createbattle", { message: "Something went wrong" });
+         res.redirect("/createbattle");
+    });
 
 }),
 module.exports = router;

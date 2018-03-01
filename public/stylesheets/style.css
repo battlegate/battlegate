@@ -57,12 +57,14 @@ p {font-size: 16px;}
             color: #fff;
             font-family: fantasy;
         }
-        .bg-5 { background-image: url("http://3.bp.blogspot.com/-0xt7g5Tilb4/Tzq59SB54-I/AAAAAAAADMM/2tPpPL3ctaU/s1600/wallpaper620296.jpg"); /* Black Gray */
+        .bg-5 { 
+            background-image: url("http://3.bp.blogspot.com/-0xt7g5Tilb4/Tzq59SB54-I/AAAAAAAADMM/2tPpPL3ctaU/s1600/wallpaper620296.jpg"); /* Black Gray */
             color: rgb(88, 88, 88);
             font-family: fantasy;
             letter-spacing: 2px;
             margin-top: 24px;
-            margin-bottom: 39px
+            margin-bottom: 39px;
+            position: relative;
          }
 
          .aboutus{
@@ -71,6 +73,7 @@ p {font-size: 16px;}
              top: 20%;
              z-index: auto;
              color: #fff;
+             position: absolute;
          }
         .bg-6 { }
 

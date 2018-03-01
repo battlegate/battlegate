@@ -32,8 +32,12 @@
         <li><a href="/contactus">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+          <% if(typeof user !== "undefined"){ %>
+            <li><a href="/logout"><span class="glyphicon glyphicon-user"></span> logout</a></li>
+          <% }else{ %>
+          <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+         <% } %>
       </ul>
     </div>
   </nav>
@@ -41,10 +45,13 @@
 
   <form action="/signup" method="POST" id="form-container">
     <label for="username">Username</label>
-    <input type="text" name="username">
+    <input class='signupform' type="text" name="username">
     <br><br>
     <label for="password">Password</label>
-    <input type="password" name="password">
+    <input class='signupform' type="password" name="password" >
+    <br><br>
+    <label for="email">Email</label>
+    <input class='signupform' type="email" name="email">
     <br><br>
     <button>Create account</button>
     <%if (typeof message !== 'undefined'){%>

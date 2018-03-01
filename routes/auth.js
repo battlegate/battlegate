@@ -22,33 +22,49 @@ router.post("/login", passport.authenticate("local", {
   })
   .post("/signup", (req,res,next)=>{
     const username = req.body.username,
-          password = req.body.password;
-    if(username === "" || password === ""){
+          password = req.body.password,
+          email    = req.body.email;
+    if(username === "" || password === "" || email === ""){
         console.log('ingresa algo')
-        res.render("signup", {message: "Indicate username and password"});
+        res.render("signup", {message: "Please fill out all fields"});
         return;
     }
-  
-      User.findOne({username}, "username", (err, user)=>{
-         if (user !== null){
+  console.log(email)
+      User.find({username}, "username", (err, user)=>{
+        console.log(user)
+         if (user.length>0){
              res.render("signup", {message:"The username already exists"});
+             
              return;
+         } else {
+          User.find({email}, 'email', (err, emailAd)=>{
+            if (emailAd.length>0){
+             res.render("signup", {message:"The email already exists"});
+             return;
+           } else {
+            const hashPass = bcrypt.hashSync(password, salt);
+     
+            const newUser = new User({
+               username,
+               password:hashPass,
+               email
+            });
+     
+            newUser.save(err=>{
+                if (err) return res.render("auth/signup", { message: "Something went wrong" });
+                 res.redirect("/");
+            });
+           }
+         });
+     
+           
          }
-  
-         const hashPass = bcrypt.hashSync(password, salt);
-  
-         const newUser = new User({
-            username,
-            password:hashPass
-         });
-  
-         newUser.save(err=>{
-             if (err) return res.render("auth/signup", { message: "Something went wrong" });
-              res.redirect("/");
-         });
+        });
+
+     
   
       });
-  });
+ 
 
   router.get("/logout", (req, res, next) => {
     req.logout()

@@ -102,6 +102,7 @@ app.use('/', how)
 app.use('/', login)
 app.use('/', signup)
 app.use('/', find)
+app.use('/', profile)
 
 
 

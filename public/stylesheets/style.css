@@ -57,10 +57,23 @@ p {font-size: 16px;}
             color: #fff;
             font-family: fantasy;
         }
-        .bg-5 { background-color: #2f2f2f; /* Black Gray */
-            color: #fff;
+        .bg-5 { 
+            background-image: url("http://3.bp.blogspot.com/-0xt7g5Tilb4/Tzq59SB54-I/AAAAAAAADMM/2tPpPL3ctaU/s1600/wallpaper620296.jpg"); /* Black Gray */
+            color: rgb(88, 88, 88);
             font-family: fantasy;
             letter-spacing: 2px;
+            margin-top: 24px;
+            margin-bottom: 39px;
+            position: relative;
+         }
+
+         .aboutus{
+             font-family: fantasy;
+             letter-spacing: 3px;
+             top: 20%;
+             z-index: auto;
+             color: #fff;
+             position: absolute;
          }
         .bg-6 { }
 
@@ -73,21 +86,12 @@ p {font-size: 16px;}
         .bg-8 { 
             background-color: #525252;
             width: 100%;
-            height:200px; 
+            height:300px; 
         color: #000000;
         padding: 0%;
     }
-        .bg-9 {
-            width: 100%;
-            height:450px; 
-        padding: 0%; 
-         }
+    
 
-         .row{
-             color: #ffffff;
-             font-family: fantasy; 
-             font-size: 0px;
-         }
         .bg-10 { }
         .bg-11 { }
         .bg-12 {background-color: #525252; /* Green */
@@ -103,7 +107,10 @@ p {font-size: 16px;}
                 font-family: fantasy;
                 font-size: 18px;
              }
-       
+             .row {
+                    margin-right: -238px;
+                    margin-left: 423px;
+                }
 
 
 

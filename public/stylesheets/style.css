@@ -59,6 +59,8 @@ p {font-size: 16px;}
         }
         .bg-5 { background-color: #2f2f2f; /* Black Gray */
             color: #fff;
+            font-family: fantasy;
+            letter-spacing: 2px;
          }
         .bg-6 { }
 
@@ -80,11 +82,19 @@ p {font-size: 16px;}
             height:450px; 
         padding: 0%; 
          }
+
+         .row{
+             color: #ffffff;
+             font-family: fantasy; 
+             font-size: 0px;
+         }
         .bg-10 { }
         .bg-11 { }
         .bg-12 {background-color: #525252; /* Green */
             color: #000000;
-            letter-spacing: 2px; }
+            letter-spacing: 2px;
+            font-family: fantasy;
+         }
 
             .bg-13 {background-color: #525252; /* Green */
                 color: #000000;

@@ -45,10 +45,13 @@
 
   <form action="/signup" method="POST" id="form-container">
     <label for="username">Username</label>
-    <input type="text" name="username">
+    <input class='signupform' type="text" name="username">
     <br><br>
     <label for="password">Password</label>
-    <input type="password" name="password">
+    <input class='signupform' type="password" name="password" >
+    <br><br>
+    <label for="email">Email</label>
+    <input class='signupform' type="email" name="email">
     <br><br>
     <button>Create account</button>
     <%if (typeof message !== 'undefined'){%>

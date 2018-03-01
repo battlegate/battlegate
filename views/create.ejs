@@ -16,8 +16,12 @@
         <li><a href="/findbattle">Find Battle</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+          <% if(typeof user !== "undefined"){ %>
+            <li><a href="/logout"><span class="glyphicon glyphicon-user"></span> logout</a></li>
+          <% }else{ %>
+          <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+         <% } %>
       </ul>
     </div>
   </nav>
@@ -33,12 +37,6 @@
             <label for="inputEmail4">Evento</label>
             <input type="email" placeholder="nombre del evento">
           </div>
-
-                  <div class="form-group">
-                      <label for="inputEmail4">Email</label>
-                      <input type="email" placeholder="Email">
-                      <id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
               
         <div class="form-group">
           <label for="exampleTextarea">Descripción del evento</label>

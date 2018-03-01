@@ -17,6 +17,10 @@ letter-spacing: 2px;
 font-family: fantasy;
 }
 
+.signupform{
+color: #000000;
+}
+
 .navbar-nav  li a:hover {
   color:  #fd0000  !important;
 }

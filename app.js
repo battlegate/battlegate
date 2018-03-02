@@ -13,7 +13,7 @@ const LocalStrategy = require("passport-local").Strategy;
 const MongoStore = require("connect-mongo")(session)
 
 const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
-mongoose.connect('mongodb://localhost/battlegate')
+mongoose.connect('mongodb://alec:123@ds011228.mlab.com:11228/battlegate')
 .then(console.log("connected"))
 
 

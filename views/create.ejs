@@ -23,11 +23,12 @@
           <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
           <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
          <% } %>
+
       </ul>
     </div>
   </nav>
 
-  <form>
+  <form action="/createbattle/new" method="post">
       <div class="container-fluid bg-12">
       <fieldset>
         <legend>Create</legend>
@@ -35,22 +36,22 @@
         </div>
         <div class="container-fluid bg-13">
         <div class="form-group col-md-6 text-left">
-            <label for="inputEmail4">Evento</label>
-            <input type="email" placeholder="nombre del evento">
+            <label for="inputEmail4">Title event</label>
+            <input type="text" name="title" placeholder="nombre del evento">
           </div>
               
         <div class="form-group">
-          <label for="exampleTextarea">Descripción del evento</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          <label for="description">Descripción del evento</label>
+          <textarea name="description" class="form-control" id="exampleTextarea" rows="3"></textarea>
         </div>
 
           <div class="form-group">
-              <label for="inputAddress">Address</label>
+              <label for="inputAddress">Place</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Av.San Luis">
             </div>
 
             <div class="form-group">
-                <label for="exampleTextarea">Descripción del lugar</label>
+                <label for="exampleTextarea">Description del lugar</label>
                 <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
               </div>
 

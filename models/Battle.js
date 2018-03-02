@@ -3,20 +3,11 @@ const Schema = mongoose.Schema;
 
 const battleSchema = new Schema(
     {
-        games:[],
-        date:String,
-        category: { type: String, enum: ['','',''], required: true },
+        title: String,
         place:String,
-        price:String,
         description:String,
-        members: []
-    },
-    {
-        timestamps:{
-            createdAt:"created_at",
-            updatedAt:"updated_at"
-        }
-    }
-    );
+        descriptionEvent:String,
+        path:String
+    });
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Battle", battleSchema);

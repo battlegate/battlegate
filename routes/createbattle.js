@@ -30,7 +30,8 @@ router.post('/createbattle/new', (req, res, next) =>{
   });
   
   newBattle.save()
-    .then(articleCreated => res.redirect("/profile"))
+    .then(articleCreated => res.redirect("/"))
+    
     .catch(err => console.log(err));
 });
   

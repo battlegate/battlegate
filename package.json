@@ -22,6 +22,7 @@
     "morgan": "~1.7.0",
     "nodemon": "^1.15.1",
     "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.3.2"
   },
@@ -37,5 +38,19 @@
   },
   "homepage": "https://github.com/encurso/ecurso#readme",
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "web": {
+    "client_id": "",
+    "project_id": "",
+    "auth_uri": "",
+    "token_uri": "",
+    "auth_provider_x509_cert_url": "",
+    "client_secret": "",
+    "redirect_uris": [
+      ""
+    ],
+    "javascript_origins": [
+      ""
+    ]
+  }
 }

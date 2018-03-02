@@ -72,7 +72,7 @@ router.post("/login", passport.authenticate("local", {
       
       router.get("/auth/google/callback", passport.authenticate("google", {
         failureRedirect: "/",
-        successRedirect: "/profile"
+        successRedirect: "/"
       }));
 
   router.get("/logout", (req, res, next) => {

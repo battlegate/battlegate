@@ -11,7 +11,7 @@ router.get("/login", (req, res, next) => {
 });
 
 router.post("/login", passport.authenticate("local", {
-  successRedirect: "/profile",
+  successRedirect: "/",
   failureRedirect: "/login",
   failureFlash: true,
   passReqToCallback: true
@@ -72,7 +72,7 @@ router.post("/login", passport.authenticate("local", {
       
       router.get("/auth/google/callback", passport.authenticate("google", {
         failureRedirect: "/",
-        successRedirect: "/profile"
+        successRedirect: "/"
       }));
 
   router.get("/logout", (req, res, next) => {
